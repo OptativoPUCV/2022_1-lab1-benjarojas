@@ -9,3 +9,9 @@ exercises.c:81:12: error: unused variable 'ptrVector' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 941689c
+Fri Mar 11 17:43:51 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+e2795dc
