@@ -1,0 +1,11 @@
+Fri Mar 11 17:42:30 HSP 2022: 
+ exercises.c | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:81:12: error: unused variable 'ptrVector' [-Werror=unused-variable]
+    Vector *ptrVector;
+            ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+941689c
