@@ -133,13 +133,17 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
    
    // Creamos el vector (a1,a2)
    Vector* vectorA = crearVector(2);
-   vectorA->datos[0] = a1;
-   vectorA->datos[1] = a2;
+   asignarValor(vectorA, 0, a1);
+   asignarValor(vectorA, 1, a2);
+   // vectorA->datos[0] = a1;
+   // vectorA->datos[1] = a2;
 
    // Creamos el vector (b1,b2)
    Vector* vectorB = crearVector(2);
-   vectorB->datos[0] = b1;
-   vectorB->datos[1] = b2;
+   asignarValor(vectorB, 0, b1);
+   asignarValor(vectorB, 1, b2);
+   // vectorB->datos[0] = b1;
+   // vectorB->datos[1] = b2;
 
    sumaV(vectorA, vectorB, c);
 }
