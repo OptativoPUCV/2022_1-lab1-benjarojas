@@ -37,7 +37,14 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-   *suma = sumaN(*(a+(n-m)), m);
+   
+   //int sizeSub = n - m;
+   
+   //int *subArray = (int *) calloc(sizeof(int), sizeSub);
+
+   *suma = sumaN((a+(n-m)), (m-n));
+
+
 }
 
 /*
