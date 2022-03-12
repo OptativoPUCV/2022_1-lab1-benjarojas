@@ -111,7 +111,11 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
+
    int cantElementos = a->capacidad;
+
+   // Usamos un for para recorrer el array de datos
+   // ya que desconocemos el tamaño logico de este   
    for (int i = 0; i < cantElementos; i++)
    {
       c->datos[i] = a->datos[i] + b->datos[i];
@@ -125,4 +129,15 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
 
+   Vector* vectorA = crearVector(2);
+   Vector* vectorB = crearVector(2);
+   Vector* vectorSuma = crearVector(2);
+
+   vectorA->datos[0] = a1;
+   vectorA->datos[0] = a2;
+
+   vectorB->datos[0] = b1;
+   vectorB->datos[0] = b2;
+
+   sumaV(vectorA, vectorB, c);
 }

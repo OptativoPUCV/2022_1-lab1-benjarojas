@@ -53,3 +53,14 @@ Fri Mar 11 20:36:52 HSP 2022:
  tests:  6|2
 total_score: 50/70
 72dbbd9
+Fri Mar 11 21:06:02 HSP 2022: 
+ exercises.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV2':
+exercises.c:134:12: error: unused variable 'vectorSuma' [-Werror=unused-variable]
+    Vector* vectorSuma = crearVector(2);
+            ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+280dd4a
