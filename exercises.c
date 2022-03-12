@@ -42,7 +42,7 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
    
    //int *subArray = (int *) calloc(sizeof(int), sizeSub);
 
-   *suma = sumaN((a+(n-m)), (m-n));
+   *suma = sumaN(((a+(n-m)-1)), (m-n));
 
 
 }
