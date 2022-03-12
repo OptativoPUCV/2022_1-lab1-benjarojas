@@ -131,8 +131,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
 
    Vector* vectorA = crearVector(2);
    Vector* vectorB = crearVector(2);
-   Vector* vectorSuma = crearVector(2);
-
+   
    vectorA->datos[0] = a1;
    vectorA->datos[0] = a2;
 

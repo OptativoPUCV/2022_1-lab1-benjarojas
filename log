@@ -64,3 +64,9 @@ exercises.c:134:12: error: unused variable 'vectorSuma' [-Werror=unused-variable
 cc1.exe: all warnings being treated as errors
 Compilation failed
 280dd4a
+Fri Mar 11 21:06:16 HSP 2022: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+44c68ec
