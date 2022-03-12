@@ -37,13 +37,9 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-   
-   //int sizeSub = n - m;
-   
-   //int *subArray = (int *) calloc(sizeof(int), sizeSub);
-
+   // Ahora el puntero apunta a la posicion n-m
+   // y desde ese indice sumamos los m elementos
    *suma = sumaN(a+(n-m), m);
-
 }
 
 /*
@@ -120,8 +116,8 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
 
    int cantElementos = a->capacidad;
 
-   // Usamos un for para recorrer el array de datos
-   // ya que desconocemos el tamaño logico de este   
+   // Usamos un for para recorrer el array 'datos'
+   // ya que su tamaño logico puede variar
    for (int i = 0; i < cantElementos; i++)
    {
       c->datos[i] = a->datos[i] + b->datos[i];
@@ -134,13 +130,14 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-
+   
+   // Creamos el vector (a1,a2)
    Vector* vectorA = crearVector(2);
-   Vector* vectorB = crearVector(2);
-
    vectorA->datos[0] = a1;
    vectorA->datos[1] = a2;
 
+   // Creamos el vector (b1,b2)
+   Vector* vectorB = crearVector(2);
    vectorB->datos[0] = b1;
    vectorB->datos[1] = b2;
 
